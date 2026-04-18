@@ -1,0 +1,66 @@
+[gd_scene format=3 uid="uid://d1sfwjc6flnat"]
+
+[ext_resource type="Script" uid="uid://bdnp5tflt4k1v" path="res://menu.gd" id="1_ouk20"]
+[ext_resource type="Texture2D" uid="uid://dx3rfqfcij2yk" path="res://fondo_menu/Fondocomputadores.jpg" id="2_mae5d"]
+
+[node name="Menu" type="Control" unique_id=1941717866]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ouk20")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1597847602]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1990271669]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_mae5d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1490110491]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 197.0
+offset_top = -84.0
+offset_right = -716.0
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=113421395]
+layout_mode = 2
+text = "Jugar"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1663921802]
+layout_mode = 2
+text = "Cargar partida"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1552658214]
+layout_mode = 2
+text = "Configuracion"
+
+[node name="Button4" type="Button" parent="VBoxContainer" unique_id=1565864661]
+layout_mode = 2
+text = "Glosario"
+
+[node name="Button5" type="Button" parent="VBoxContainer" unique_id=506191412]
+layout_mode = 2
+text = "Salir"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button5" to="." method="_on_button_5_pressed"]

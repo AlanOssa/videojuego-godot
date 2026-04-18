@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b7vf6gwgytli0"]
+[gd_scene format=3 uid="uid://b7vf6gwgytli0"]
 
 [ext_resource type="Texture2D" uid="uid://dfc5mkiplhon7" path="res://Fondo/Fondo1.png" id="1_nqrd8"]
 [ext_resource type="Texture2D" uid="uid://bjukidojiu3rp" path="res://Personajes/Codel sprite/Codel3.png" id="2_rc4xl"]
@@ -12,64 +12,64 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jiohd"]
 bg_color = Color(0.11764706, 0.11764706, 0.18039216, 1)
 
-[node name="Cap_1" type="Node"]
+[node name="Cap_1" type="Node" unique_id=307000709]
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1172940420]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=707253135]
 
-[node name="Fondo" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+[node name="Fondo" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1735631271]
 position = Vector2(577, 323.75003)
 scale = Vector2(0.75065106, 0.6215821)
 texture = ExtResource("1_nqrd8")
 
-[node name="Personajes" type="Node2D" parent="."]
+[node name="Personajes" type="Node2D" parent="." unique_id=1782608772]
 
-[node name="Instrutora" type="Node2D" parent="Personajes"]
+[node name="Instrutora" type="Node2D" parent="Personajes" unique_id=243677493]
 
-[node name="Normal" type="Sprite2D" parent="Personajes/Instrutora"]
+[node name="Normal" type="Sprite2D" parent="Personajes/Instrutora" unique_id=1881279386]
 position = Vector2(589, 440)
 scale = Vector2(0.23840451, 0.19916824)
 texture = ExtResource("2_rc4xl")
 
-[node name="Indiferente" type="Sprite2D" parent="Personajes/Instrutora"]
+[node name="Indiferente" type="Sprite2D" parent="Personajes/Instrutora" unique_id=1732126749]
 visible = false
 position = Vector2(589, 440)
 scale = Vector2(0.238, 0.199)
 texture = ExtResource("3_mtuym")
 
-[node name="Feliz" type="Sprite2D" parent="Personajes/Instrutora"]
+[node name="Feliz" type="Sprite2D" parent="Personajes/Instrutora" unique_id=1329343583]
 visible = false
 position = Vector2(589, 440)
 scale = Vector2(0.238, 0.199)
 texture = ExtResource("4_iac48")
 
-[node name="Dialogos_Cuadros" type="Node2D" parent="."]
+[node name="Dialogos_Cuadros" type="Node2D" parent="." unique_id=375022095]
 
-[node name="Nombre" type="Sprite2D" parent="Dialogos_Cuadros"]
+[node name="Nombre" type="Sprite2D" parent="Dialogos_Cuadros" unique_id=413603791]
 modulate = Color(1, 1, 1, 0.49411765)
 position = Vector2(293, 491)
 scale = Vector2(0.21561769, 0.397436)
 texture = ExtResource("5_rc4xl")
 
-[node name="Dialogo" type="Sprite2D" parent="Dialogos_Cuadros"]
+[node name="Dialogo" type="Sprite2D" parent="Dialogos_Cuadros" unique_id=391697225]
 modulate = Color(1, 1, 1, 0.49411765)
 position = Vector2(611, 580)
 texture = ExtResource("5_rc4xl")
 
-[node name="Dialogos" type="Control" parent="."]
+[node name="Dialogos" type="Control" parent="." unique_id=1589865164]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Instructora" type="Control" parent="Dialogos"]
+[node name="Instructora" type="Control" parent="Dialogos" unique_id=1659082933]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("6_mtuym")
 
-[node name="Saludo" type="RichTextLabel" parent="Dialogos/Instructora"]
+[node name="Saludo" type="RichTextLabel" parent="Dialogos/Instructora" unique_id=1898474267]
 layout_mode = 0
 offset_left = 216.0
 offset_top = 528.0
@@ -78,14 +78,14 @@ offset_bottom = 626.0
 theme_override_colors/default_color = Color(0.7871241, 0.21982488, 0.5829807, 1)
 theme_override_font_sizes/normal_font_size = 23
 
-[node name="Nombre" type="Control" parent="Dialogos"]
+[node name="Nombre" type="Control" parent="Dialogos" unique_id=850709173]
 anchors_preset = 0
 offset_left = 34.0
 offset_top = 6.0
 offset_right = 74.0
 offset_bottom = 46.0
 
-[node name="Cnombre" type="RichTextLabel" parent="Dialogos/Nombre"]
+[node name="Cnombre" type="RichTextLabel" parent="Dialogos/Nombre" unique_id=1666308463]
 layout_mode = 0
 offset_left = 177.0
 offset_top = 468.0
@@ -95,14 +95,14 @@ theme_override_colors/default_color = Color(0.69620067, 0.13379058, 0.501069, 1)
 theme_override_font_sizes/normal_font_size = 25
 theme_override_font_sizes/bold_italics_font_size = 23
 
-[node name="LineEditNombre" type="LineEdit" parent="Dialogos/Nombre"]
+[node name="LineEditNombre" type="LineEdit" parent="Dialogos/Nombre" unique_id=35505229]
 layout_mode = 0
 offset_left = 721.0
 offset_top = 468.0
 offset_right = 969.0
 offset_bottom = 507.0
 
-[node name="ConsolaPython" type="Control" parent="."]
+[node name="ConsolaPython" type="Control" parent="." unique_id=737290412]
 custom_minimum_size = Vector2(600, 350)
 layout_mode = 3
 anchors_preset = 8
@@ -118,7 +118,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("7_iac48")
 
-[node name="Panel" type="Panel" parent="ConsolaPython"]
+[node name="Panel" type="Panel" parent="ConsolaPython" unique_id=344062457]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -127,7 +127,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_jiohd")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ConsolaPython/Panel"]
+[node name="VBoxContainer" type="VBoxContainer" parent="ConsolaPython/Panel" unique_id=214747390]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -140,36 +140,36 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 10
 
-[node name="LabelTitulo" type="Label" parent="ConsolaPython/Panel/VBoxContainer"]
+[node name="LabelTitulo" type="Label" parent="ConsolaPython/Panel/VBoxContainer" unique_id=1251668451]
 layout_mode = 2
 text = "🐍 Consola Python"
 
-[node name="Output" type="RichTextLabel" parent="ConsolaPython/Panel/VBoxContainer"]
+[node name="Output" type="RichTextLabel" parent="ConsolaPython/Panel/VBoxContainer" unique_id=226299251]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 size_flags_vertical = 3
 bbcode_enabled = true
 scroll_following = true
 
-[node name="HSeparator" type="HSeparator" parent="ConsolaPython/Panel/VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="ConsolaPython/Panel/VBoxContainer" unique_id=1801809217]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="ConsolaPython/Panel/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="ConsolaPython/Panel/VBoxContainer" unique_id=1900484293]
 layout_mode = 2
 
-[node name="LabelPrompt" type="Label" parent="ConsolaPython/Panel/VBoxContainer/HBoxContainer"]
+[node name="LabelPrompt" type="Label" parent="ConsolaPython/Panel/VBoxContainer/HBoxContainer" unique_id=1590947846]
 layout_mode = 2
 text = ">>>"
 
-[node name="InputLinea" type="LineEdit" parent="ConsolaPython/Panel/VBoxContainer/HBoxContainer"]
+[node name="InputLinea" type="LineEdit" parent="ConsolaPython/Panel/VBoxContainer/HBoxContainer" unique_id=2110328447]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="BtnEjecutar" type="Button" parent="ConsolaPython/Panel/VBoxContainer/HBoxContainer"]
+[node name="BtnEjecutar" type="Button" parent="ConsolaPython/Panel/VBoxContainer/HBoxContainer" unique_id=282534030]
 layout_mode = 2
 text = "Ejecutar"
 
-[node name="BtnCerrar" type="Button" parent="ConsolaPython"]
+[node name="BtnCerrar" type="Button" parent="ConsolaPython" unique_id=313842927]
 layout_mode = 0
 offset_left = 521.0
 offset_top = 4.0
@@ -177,31 +177,31 @@ offset_right = 596.0
 offset_bottom = 35.0
 text = "Cerrar ✕"
 
-[node name="OpcionesMenu" type="Control" parent="."]
+[node name="OpcionesMenu" type="Control" parent="." unique_id=1556604335]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("8_jiohd")
 
-[node name="Panel" type="Panel" parent="OpcionesMenu"]
+[node name="Panel" type="Panel" parent="OpcionesMenu" unique_id=774983319]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="OpcionesMenu/Panel"]
+[node name="VBoxContainer" type="VBoxContainer" parent="OpcionesMenu/Panel" unique_id=1368221258]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="LabelPregunta" type="Label" parent="OpcionesMenu/Panel/VBoxContainer"]
+[node name="LabelPregunta" type="Label" parent="OpcionesMenu/Panel/VBoxContainer" unique_id=737168638]
 layout_mode = 2
 
-[node name="BtnPregunta" type="Button" parent="OpcionesMenu/Panel/VBoxContainer"]
+[node name="BtnPregunta" type="Button" parent="OpcionesMenu/Panel/VBoxContainer" unique_id=543696648]
 layout_mode = 2
 
-[node name="BtnTerminal" type="Button" parent="OpcionesMenu/Panel/VBoxContainer"]
+[node name="BtnTerminal" type="Button" parent="OpcionesMenu/Panel/VBoxContainer" unique_id=259864747]
 layout_mode = 2
 
-[node name="BtnExplicar" type="Button" parent="OpcionesMenu/Panel/VBoxContainer"]
+[node name="BtnExplicar" type="Button" parent="OpcionesMenu/Panel/VBoxContainer" unique_id=1402839710]
 layout_mode = 2
